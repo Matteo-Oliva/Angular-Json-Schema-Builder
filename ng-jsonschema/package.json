@@ -1,0 +1,36 @@
+{
+  "name": "ng-jsonschema",
+  "version": "0.0.2",
+  "license": "MIT",
+  "homepage": "https://github.com/mariohmol/ng-jsonschema",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariohmol/ng-jsonschema.git"
+  },
+  "author": "Mario Mol <mariohmol@gmail.com>",
+  "keywords": [
+    "angular",
+    "ng-jsonschema",
+    "jsonschema"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=4.0.0 >10.0.0",
+    "@angular/core": ">=4.0.0 >10.0.0"
+  },
+  "dependencies": {
+    "ang-jsoneditor": "*",
+    "jsoneditor": "*"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "workingDirectory": "../.ng_build",
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    },
+    "dest": "../dist/ng-jsonschema",
+    "whitelistedNonPeerDependencies": [
+      "ang-jsoneditor",
+      "jsoneditor"
+    ]
+  }
+}
